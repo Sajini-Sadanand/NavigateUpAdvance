@@ -26,6 +26,8 @@ class OrderViewModel:ViewModel() {
         NumberFormat.getCurrencyInstance().format(it)
     }
 
+    val priceVal:LiveData<Double> get() = _price
+
     val dateOptions = getPickUpOptions()
 
     init {
